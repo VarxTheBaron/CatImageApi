@@ -13,7 +13,6 @@ GET /api/cats/facts?b={breed} - random breed facts
 
 POST /api/cats - tar emot JSON data (se nedan) för att lägga in katter i databasen
 
-### Att hämta en random katt bild ska returnera
 ```JSON
 ### GET example
 {
