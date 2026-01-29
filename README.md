@@ -11,17 +11,18 @@ GET /api/cats/category?b={breed}&&a={amount} - random x amount of cat images wit
 GET /api/cats/facts - random cat facts
 GET /api/cats/facts?b={breed} - random breed facts
 
+POST /api/cats - tar emot JSON data (se nedan) för att lägga in katter i databasen
+
 ### Att hämta en random katt bild ska returnera
 ´´´JSOn
 {
-  "Url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Ragdoll%2C_seal_mitted.JPG"
+  "Url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Ragdoll%2C_seal_mitted.JPG",
   "Description": "Nice ragdoll kitty"
-  }
+}
 
-
-POST /api/cats - tar emot JSON data (se nedan) för att lägga in katter i databasen
+### POST example
 
 {
-"Url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Ragdoll%2C_seal_mitted.JPG"
-"Description": "Nice ragdoll kitty"
+  "Url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Ragdoll%2C_seal_mitted.JPG",
+  "Description": "Nice ragdoll kitty"
 }
