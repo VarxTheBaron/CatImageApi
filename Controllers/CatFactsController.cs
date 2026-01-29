@@ -12,11 +12,6 @@ public class CatFactsController : ControllerBase
     [HttpGet("facts")]
     public async Task<IActionResult> GetCatFact(string? b, CatDbContext db)
     {
-        if (b != null)
-        {
-
-        }
-
         var facts = db.CatFacts.ToList();
         var response = new GetCatFactResponse(facts[Random.Shared.Next(0, facts.Count)]);
 

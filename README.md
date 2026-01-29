@@ -9,7 +9,6 @@ GET /api/cats?w={weather} - random image of cat within weather category
 GET /api/cats?b={breed}&&a={amount} - random x amount of cat images within specified category
 
 GET /api/cats/facts - random cat facts
-GET /api/cats/facts?b={breed} - random breed facts
 
 POST /api/cats - tar emot JSON data (se nedan) för att lägga in katter i databasen
 

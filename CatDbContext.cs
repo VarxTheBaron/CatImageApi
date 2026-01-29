@@ -43,7 +43,11 @@ public class CatDbContext : DbContext
             new CatFact { Id = 1, Fact = "Cats are cool!" },
             new CatFact { Id = 2, Fact = "The Cataclysm was caused by dogs!" },
             new CatFact { Id = 3, Fact = "Cats are cooler than dogs, dogs are poopy." },
-            new CatFact { Id = 4, Fact = "Cats + cheeseburgers = good stuff." }
+            new CatFact { Id = 4, Fact = "Cats + cheeseburgers = good stuff." },
+            new CatFact { Id = 5, Fact = "Cats are cool!", BreedID = 1 },
+            new CatFact { Id = 6, Fact = "Cats are cool!", BreedID = 2 },
+            new CatFact { Id = 7, Fact = "Cats are cool!", BreedID = 3 },
+            new CatFact { Id = 8, Fact = "Cats are cool!", BreedID = 1 }
         );
     }
 }
