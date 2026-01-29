@@ -1,5 +1,7 @@
+using CatImageApi.Data;
 using CatImageApi.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace CatImageApi.Controllers;
 
@@ -8,13 +10,16 @@ namespace CatImageApi.Controllers;
 public class CatFactsController : ControllerBase
 {
     [HttpGet("facts")]
-    public async Task<IActionResult> GetCatFact(string? b)
+    public async Task<IActionResult> GetCatFact(string? b, CatDbContext db)
     {
         if (b != null)
         {
 
         }
 
-        return Ok(new GetCatFactResponse() { Fact = "Cats are nice" });
+        var facts = db.CatFacts.ToList();
+        var response = new GetCatFactResponse(facts[Random.Shared.Next(0, facts.Count)]);
+
+        return Ok(response);
     }
 }
