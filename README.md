@@ -15,6 +15,7 @@ POST /api/cats - tar emot JSON data (se nedan) för att lägga in katter i datab
 
 ### Att hämta en random katt bild ska returnera
 ```JSON
+### GET example
 {
   "Url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Ragdoll%2C_seal_mitted.JPG",
   "Description": "Nice ragdoll kitty"
