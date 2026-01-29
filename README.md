@@ -2,11 +2,11 @@
 
 GET /api/cats - Random cat image
 
-GET /api/cats/category
-GET /api/cats/category?b={breed} - random cat image of cat within specified category
-GET /api/cats/category?a={amount} - random x amount of cat images
-GET /api/cats/category?w={weather} - random image of cat within weather category 
-GET /api/cats/category?b={breed}&&a={amount} - random x amount of cat images within specified category
+
+GET /api/cats?b={breed} - random cat image of cat within specified category
+GET /api/cats?a={amount} - random x amount of cat images
+GET /api/cats?w={weather} - random image of cat within weather category 
+GET /api/cats?b={breed}&&a={amount} - random x amount of cat images within specified category
 
 GET /api/cats/facts - random cat facts
 GET /api/cats/facts?b={breed} - random breed facts
@@ -27,4 +27,9 @@ POST /api/cats - tar emot JSON data (se nedan) för att lägga in katter i datab
   "Description": "Nice ragdoll kitty",
   "Breed": "Ragdoll",
   "Weather": "Sunshine"
+}
+
+### GET fact example
+{
+  "Fact": "Cats are cool."
 }
