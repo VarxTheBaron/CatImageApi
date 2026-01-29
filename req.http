@@ -1,0 +1,5 @@
+GET http://localhost:5219/api/cats/random
+
+
+###
+GET http://localhost:5219/api/cats

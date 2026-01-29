@@ -4,3 +4,37 @@ GET {{CatImageApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+# Hämta en slumpmässig katt
+GET {{CatImageApi_HostAddress}}/api/cat/random
+Accept: application/json
+
+###
+# Hämta 5 slumpmässiga katter
+GET {{CatImageApi_HostAddress}}/api/cat/random/5
+Accept: application/json
+
+### 
+# Hämta alla katter
+GET {{CatImageApi_HostAddress}}/api/cat
+Accept: application/json
+
+###
+# Få specifik katt med ID 1
+GET {{CatImageApi_HostAddress}}/api/cat/1
+Accept: application/json
+
+###
+# Få katter av specifik ras
+GET {{CatImageApi_HostAddress}}/api/cat/breed/Persian
+Accept: application/json
+
+###
+# Lägg till ny katt
+POST {{CatImageApi_HostAddress}}/api/cat
+Content-Type: application/json
+
+{
+  "name": "Fluffy5",
+  "imageUrl": "https://cataas.com/cat/fluffy",
+  "breed": "Persian"
+}
