@@ -2,4 +2,6 @@ GET http://localhost:5219/api/cats/random
 
 
 ###
-GET http://localhost:5219/api/cats
+GET http://localhost:5219/api/cats?a=10
+###
+GET http://localhost:5219/api/cats/facts

@@ -17,7 +17,7 @@ namespace CatImageApi.Controllers
         }
 
         // GET: api/cat/random - Få en slumpmässig katt
-        [HttpGet("random")]
+        [HttpGet]
         public async Task<ActionResult<Cat>> GetRandomCat()
         {
             var count = await _context.Cats.CountAsync();

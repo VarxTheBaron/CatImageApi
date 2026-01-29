@@ -6,7 +6,7 @@ namespace CatImageApi.Controllers;
 [Route("/api/cats")]
 public class RandomCatController : ControllerBase
 {
-    [HttpGet]
+    [HttpGet("placeholder")]
     public async Task<IActionResult> GetRandomCats()
     {
         return Ok(new GetCatResponse()
