@@ -24,5 +24,7 @@ POST /api/cats - tar emot JSON data (se nedan) för att lägga in katter i datab
 
 {
   "Url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Ragdoll%2C_seal_mitted.JPG",
-  "Description": "Nice ragdoll kitty"
+  "Description": "Nice ragdoll kitty",
+  "Breed": "Ragdoll",
+  "Weather": "Sunshine"
 }
