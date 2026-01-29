@@ -31,7 +31,7 @@ var app = builder.Build();
 
 using var scope = app.Services.CreateScope();
 var db = scope.ServiceProvider.GetRequiredService<CatDbContext>();
-db.SetUpDatabase();
+db.SetUpDatabase(true);
 
 // Denna hör ihop med CORS-inställningen ovan
 app.UseCors();
