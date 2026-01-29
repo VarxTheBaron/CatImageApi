@@ -14,7 +14,7 @@ GET /api/cats/facts?b={breed} - random breed facts
 POST /api/cats - tar emot JSON data (se nedan) för att lägga in katter i databasen
 
 ### Att hämta en random katt bild ska returnera
-´´´JSOn
+```JSON
 {
   "Url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Ragdoll%2C_seal_mitted.JPG",
   "Description": "Nice ragdoll kitty"
